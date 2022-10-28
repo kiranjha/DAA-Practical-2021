@@ -17,12 +17,12 @@ class Graph
 };
 int Graph::input()
 {
-    cout<<"\n***************KRUSKAL'S ALGORITHM****************";
+    cout<<"\n---------------KRUSHKAL's ALGORITHM-----------------";
     cout<<"\nEnter the no. of vertices in the graph:";
     cin>>n;
     no_edg=0;
 
-    cout<<"\nEnter the weights of the following:\n";
+    cout<<"\nEnter the weights of the following edges:\n";
 
     for(int i=1;i<=n;i++)
     {
@@ -89,6 +89,7 @@ void Graph::kruskal_algo()
         if(p1!=p2)
         {
             cout<<"The edge included in MST is ::"<<" < "<<edges[i][1]<<" , "<<edges[i][2]<<" > "<<endl;
+            // minimum spanning tree
             for(int j=1;j<=top[p2];j++)
             {
                 top[p1]++;
