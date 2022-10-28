@@ -10,7 +10,7 @@ class BSTNode
     BSTNode()
     {
         left = right = parent = 0;
-        el=-1;  //underflow condition
+        el=-1;  //for underflow
     }
     BSTNode(const int& e, BSTNode *p = 0, BSTNode *l = 0, BSTNode *r = 0)
     {
